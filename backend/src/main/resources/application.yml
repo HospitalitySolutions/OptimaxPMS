@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: optimax-db
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/optimaxdb
+    username: optimax
+    password: optimax
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+security:
+  jwt:
+    # Use a long random secret in real deployments
+    secret: "change-this-secret-in-production-change-this-secret"
+    expiration-minutes: 60
+  # Must be 16/24/32 bytes long. Use environment overrides in real deployments.
+  encryption-key: "16-byte-secret-k"
