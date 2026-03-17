@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hospitality-pms.iml" filepath="$PROJECT_DIR$/.idea/hospitality-pms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OptimaxPMS.iml" filepath="$PROJECT_DIR$/.idea/OptimaxPMS.iml" />
     </modules>
   </component>
 </project>
